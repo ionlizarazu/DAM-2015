@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Rellena tu CV</h1>
+        <form action="#" method="get">
+            <p>Nombre</p>
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <br />
+            <p>Apellidos</p>
+            <input type="text" name="Apellidos" placeholder="Apellidos">
+            <br />
+            <p>Contraseña</p>
+            <input type="password" name="contraseña" placeholder="******">
+            <br />
+            <p>DNI</p>
+            <input type="text" name="DNI" placeholder="00000000A">
+            <br />
+            <p>Sexo</p>
+            <input	type="radio"	name="sexo"	value="mujer"	checked	/> Mujer 
+            <br />
+            <input	type="radio"	name="sexo"	value="hombre" /> Hombre
+            <br />
+            <br />
+            Incluir mi foto <input type="file" name="foto" accept="image/*">
+            <br />
+            <br />
+            <textarea	name="descripcion"	cols="40"	rows="5"></textarea> 
+            <br />
+            <input type="checkbox" name="Suscribirme" checked> Suscribirme al boletín de novedades 
+            <br />
+            <br />
+            <input type="submit" name="submit" value="Guardad cambios"> 
+            <input type="reset" name="reset" value="Borrar los datos introducidos">
+        </form>
+    </body>
+</html>
