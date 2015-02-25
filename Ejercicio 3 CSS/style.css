@@ -1,0 +1,9 @@
+.requerido{color:red;}
+input{display:block;}
+span label{font-size: x-small;float:left;width:100%;color:grey;}
+label.titulo{font-size: normal;font-weight: bold;color:black;}
+li{width: 50%;float:left;list-style-type:none; }
+/*div span{float:left;width:100%}*/
+#apellido1, #apellido2, #direccion{width: 75%;}
+ul>li:last-child{width: 100%; border-top: 1px solid black;padding-top: 15px;}
+li>input{float:right;}
