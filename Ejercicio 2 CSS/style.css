@@ -1,0 +1,16 @@
+h1 { color:teal;}
+p strong {color:red;}
+div p{color:olive;}
+h2 {color:blue;}
+.destacado, td strong{color:orange;}
+div p a{color:green;}
+a{color:red;}
+a em, caption{color:blue;}
+th{color:red;font-weight:bold;}
+td{color:green;}
+th.especial{color:orange; font-weight:bold;}
+span.especial{color:purple;font-weight:normal;}
+#especial{color:fuchsia;}
+table, th, td{	border:	1px	solid	black;}
+td, th{padding:4px;margin:4px;}
+table{border-collapse:collapse;}
