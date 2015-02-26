@@ -1,0 +1,56 @@
+body {
+    background-color: #ecc06c;
+}
+
+h1 {
+    text-decoration: bold;
+    color: white;
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.cita {
+    text-align: right;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+div p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+div {
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+.chiste1 {
+    background-color: #dddddd;
+    border: dotted 4px grey;
+}
+
+.chiste2 {
+    background-color: #ffffa2;
+    border: solid 4px yellow;
+}
+
+.chiste3 {
+    background-color: #89e1ae;
+    border: solid 4px #4ba772;
+}
+
+.chiste4 {
+    background-color: #dddddd;
+    border: double 4px grey;
+}
+
+.chiste5 {
+    background-color: #dfc0ff;
+    border: dotted 4px #ae90ce;
+}
