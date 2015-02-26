@@ -1,0 +1,9 @@
+body{background-color: #ddeecd;overflow:hidden;}
+div.citas{position: absolute; left: 25%; right: 25%; top: 25%; height: 40%; overflow: hidden;background-color: grey;padding: 40px;}
+div>div{padding:25%;}
+
+div>p{text-align: justify;font-size: x-large;}
+p+p{text-align: center; font-size: smaller;}
+div>p:first-letter{font-size:2em;color:red;}
+p+p:first-letter{font-size:1em;color:black;}
+a[href='#a']{margin-top: 250px;}
