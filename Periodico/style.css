@@ -1,0 +1,125 @@
+div.news div:nth-of-type(2){
+    margin:0 25% 0 25%;
+}
+.header {
+    text-decoration: bold;
+    font-family: arial;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: 1.1em 0 0.5em 0;
+}
+
+.menu {
+    list-style: none;
+    background-color: #F67325;
+    margin: 0 20% 0 20%;
+    padding:1% 0 1% 0;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.wrapper {
+    margin: 0 20% 20% 20%;
+    background-color: white;
+    padding: 5%;
+
+}
+
+.news {
+    width: 45%;
+    margin: 2%;
+    border: solid 1px grey;
+
+}
+
+.footer {
+    padding: 0 0 5% 0;
+
+}
+.footer img{
+    width: 20%;
+    margin: 0 0 0 40%;
+}
+
+
+
+.imgfooter{
+    text-align: center;
+    font-family: monospace;
+    margin: 0;
+    /*width: 50%;*/
+    box-sizing: border-box;
+
+}
+.inline {
+    display: inline;
+}
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+.border {
+    border: solid 1px black;
+}
+.ovf-hide {
+    overflow: hidden;
+}
+.ovf-scroll {
+    overflow: scroll;
+}
+.fleft {
+    float: left;
+}
+.fright{
+    float: right
+}
+
+body {
+    background-color: #92B5AF;
+}
+
+ul.menu li {
+    padding: 0 5% 0 5%;
+    margin: 1%;
+        background-color: #dd9b4f;
+
+}
+.featured {
+    background-color: #B4AD7F;
+    padding:5%;
+}
+div.news p {
+    text-align: justify;
+    margin: 1%;
+    padding:2%
+}
+h2 {
+    text-align: center;
+    margin: 1%;
+    padding:2%
+}
+h3 {
+    margin: 1%;
+    padding:2%
+
+}
+
+.ads {
+    background-color: #f1ede8;
+    padding:2%;
+
+
+}
+
+.pics {
+    margin: 0;
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+}
