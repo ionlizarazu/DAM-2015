@@ -1,0 +1,135 @@
+
+        body {
+            margin: 0px;
+        }
+        #container{
+            background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-transition-timing-function: ease-in;
+        }
+        .snowflake.f1 {
+            left: 40px;
+            -webkit-animation-duration: 20s;
+            -webkit-animation-name: baja1;
+            
+            
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+            -webkit-animation-duration: 30s;
+            -webkit-animation-name: baja2;
+        }
+        .snowflake.f3 {
+            left: 200px;
+            -webkit-animation-duration: 15s;
+            -webkit-animation-name: baja1;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+            -webkit-animation-duration: 40s;
+            -webkit-animation-name: baja2;
+        }
+
+        @-webkit-keyframes baja1 {
+            from {
+                margin-top: 0;
+                margin-left: 0;
+                opacity:  1;
+                -webkit-transform: rotate(180deg);
+            }
+            5%{
+                margin-left: 5%;
+                
+            }
+            15%{
+                margin-left: -5%;
+            }
+            25%{
+                margin-left: 5%;
+            }
+            35%{
+                margin-left: -5%;
+            }
+            45%{
+                margin-left: 5%;
+                -webkit-transform: rotate(-180deg);
+            }
+            55%{
+                margin-left: -5%;
+                opacity: 1;
+            }
+            65%{
+                margin-left: 5%;
+            }
+            75%{
+                margin-left: -5%;
+                -webkit-transform: rotate(90deg);
+            }
+             85%{
+                 margin-left: 5%;
+             }
+                
+            to {
+                margin-top: 100%;
+                margin-left: 0;
+                opacity:  0;   
+                
+
+            }
+        }
+            
+            @-webkit-keyframes baja2 {
+            from {
+                margin-top: 0;
+                margin-left: 0;
+                opacity:  1;       
+                -webkit-transform: rotate(90deg);
+            }
+            5%{
+                margin-left: 3%;
+            }
+            15%{
+                margin-left: -2%;
+            }
+            25%{
+                margin-left: 4%;
+            }
+            35%{
+                margin-left: -1%;
+            }
+            45%{
+                margin-left: 5%;
+            }
+            55%{
+                margin-left: -3%;
+                opacity: 1;
+                -webkit-transform: rotate(180deg);
+            }
+            65%{
+                margin-left: 15%;
+            }
+            75%{
+                margin-left: -1%;
+            }
+             85%{
+                 margin-left: 5%;
+             }
+                
+            to {
+                margin-top: 100%;
+                margin-left: 0;
+                opacity:  0;           
+                -webkit-transform: rotate(-180deg);
+            }
+            
+        }
