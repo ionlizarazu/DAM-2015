@@ -23,7 +23,7 @@ function mostrarContenido(){
     
     peticion_http.onreadystatechange = muestraContenido;
     
-    peticion_http.open('GET', 'http://localhost/DAM15/Ejercicio%201%20AJAX/', true);
+    peticion_http.open('GET', urlText, true);
     peticion_http.send(null);
     
     var now = new Date();
