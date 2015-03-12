@@ -69,7 +69,8 @@ function parseaMunicipiosJSON(peticion_http){
     var listaP = document.getElementById("municipio");
     var respuesta_json = peticion_http.responseText;
     var objeto_json = JSON.parse(respuesta_json);
-    
+    listaP.options.length=0;
+    listaP.options[0]=new Option("- Selecciona municipio -","00");
     var i =1;
     for (var objeto in objeto_json){
         
