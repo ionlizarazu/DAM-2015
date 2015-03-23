@@ -4,93 +4,159 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ejercicio 10 - Formulario de alta</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/plain" href="css/bootstrap.css.map">
 
     </head>
 
     <body>
-        <div class="header">
-            Header
-        </div>
-        <ul class="menu block ovf-hidden">
-            <li class="border inline">
-                Inicio
-            </li>
-            <li class="border inline">
-                Economía
-            </li>
-            <li class="border inline">
-                Deportes
-            </li>
-            <li class="border inline">
-                Política
-            </li>
-        </ul>
-        <div class="wrapper inline fleft">
-            <div class="featured">
-                <h2><a href="#titu1">Nafarroako ikurra kentzeko agindu dio EAEko Auzitegiak Gipuzkoari</a></h2>
-                <h2><a href="#titu2">Seguridad desactiva la situación de "emergencia 1" en los ríos vascos</a></h2>
-                <h2><a href="#titu3">Piden seis años al presidente de Sortu, Hasier Arraiz, por Segura</a></h2>
-            </div>
-             <div class="ads">
-                <img src="http://lorempixel.com/300/200/">
-                <img src="http://lorempixel.com/299/200/">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav class="navbar navbar-inverse container">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="images/NewsPaper.png"></a>
             </div>
 
-            <div class="news inline-block fleft">
-                <h2 id="titu1">Nafarroako ikurra kentzeko agindu dio EAEko Auzitegiak Gipuzkoari</h2>
-                <h3>Nafarroako Gobernuaren eskariz hartu du neurria.</h3>
-                <div>
-                    <p>Euskal Herriko zenbait interesgune seinalizatzen dituzten panelak jarri zituen Gipuzkoako Foru Aldundiak errepide sareko bederatzi tokitan, Udalbiltzak eginiko akordio baten ondorioz. Nafarroako Gobernuak adierazi duenez, seinale horiengatik haserrea adierazi zion Gipuzkoako Diputazioari iazko azaroaren 26an, argudiatuz "Nafarroako erakundeekiko errespetu falta larria" zela.</p>                <div class="pics"></div>
-                    <p>"Nafarroarekiko probokaziotzat" jo zituen kartelak Yolanda Barcina buru duen gobernuak. Gipuzkoako Diputazioak eskariari entzungor egin ziolakoan, auzitara jo zuen Nafarroako Gobernuak.</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Ocio</a></li>
+              </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide row" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="http://placehold.it/1170x300" alt="aaa">
+                  <div class="carousel-caption">
+                      <h3><a href="#titu1">Nafarroako ikurra kentzeko agindu dio EAEko Auzitegiak Gipuzkoari</a></h3>
+                    <p>Nafarroako Gobernuaren eskariz hartu du neurria.</p>
+                  </div>
                 </div>
-                <div>
-                    <img class="pics border" src="http://placehold.it/75x75">
-                    <p class="imgfooter border"> Descripción</p>
+                <div class="item">
+                  <img src="http://placehold.it/1170x300" alt="aaa">
+                  <div class="carousel-caption">
+                    <h3><a href="#titu2">Seguridad desactiva la situación de "emergencia 1" en los ríos vascos</a></h3>
+                    <p>El departamento vasco de Seguridad ha desactivado la situación de "emergencia 1" en Euskadi</p>
+                  </div>
                 </div>
-            </div>
-            <div class="news inline-block fleft">
-                <h2 id="titu2">Seguridad desactiva la situación de "emergencia 1" en los ríos vascos</h2>
-                <h3> El departamento vasco de Seguridad ha desactivado la situación de "emergencia 1" en Euskadi</h3>
-                <div>
-                    <p>El departamento vasco de Seguridad ha desactivado la situación de "emergencia 1" en Euskadi por "la mejora observada en las previsiones meteorológicas y en las cuencas de los ríos", aunque mantiene la "situación 0" y la "vigilancia intensiva" en los cauces fluviales.</p>
-                    <p>Según informa el departamento de Seguridad en una nota, "en estos momentos se constata una bajada considerable de los niveles de las cuencas los ríos" vascos "derivada de la disminución generalizada de las precipitaciones" en Euskadi.</p>
-                    <p>Esta situación se constata especialmente en Donostia, donde el caudal del río Urumea a su paso por el barrio de Martutene -en el que hasta el momento la crecida había provocado los mayores inconvenienes-, ha descendido a nivel naranja y a esta hora se sitúa en los 4,2 metros, según informa el Ayuntamiento de Donostia.</p>
+                <div class="item">
+                  <img src="http://placehold.it/1170x300" alt="aaa">
+                  <div class="carousel-caption">
+                    <h3><a href="#titu3">Piden seis años al presidente de Sortu, Hasier Arraiz, por Segura</a></h3>
+                    <p>Como sus compañeros que serán juzgados en Madrid, el presidente de Sortu, Hasier Arraiz, afronta una petición fiscal por «integración en ETA» que en su caso se traduce en seis años de cárcel.</p>
+                  </div>
                 </div>
-                <div>
-                    <img class="pics border" src="http://placehold.it/75x75">
-                    <p class="imgfooter border"> Descripción</p>
+
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+             <div class="ads row">
+                <img src="http://lorempixel.com/300/200/" class="col-lg-3">
+                <img src="http://lorempixel.com/299/200/" class="col-lg-3">
+                <img src="http://lorempixel.com/300/199/" class="col-lg-3">
+            </div>
+            <div class="container">
+                <div class="col-lg-3 news">
+                    <h2 id="titu1">Nafarroako ikurra kentzeko agindu dio EAEko Auzitegiak Gipuzkoari</h2>
+                    <h3>Nafarroako Gobernuaren eskariz hartu du neurria.</h3>
+                    <div>
+                        <p>Euskal Herriko zenbait interesgune seinalizatzen dituzten panelak jarri zituen Gipuzkoako Foru Aldundiak errepide sareko bederatzi tokitan, Udalbiltzak eginiko akordio baten ondorioz. Nafarroako Gobernuak adierazi duenez, seinale horiengatik haserrea adierazi zion Gipuzkoako Diputazioari iazko azaroaren 26an, argudiatuz "Nafarroako erakundeekiko errespetu falta larria" zela.</p>                <div class="pics"></div>
+                        <p>"Nafarroarekiko probokaziotzat" jo zituen kartelak Yolanda Barcina buru duen gobernuak. Gipuzkoako Diputazioak eskariari entzungor egin ziolakoan, auzitara jo zuen Nafarroako Gobernuak.</p>
+                    </div>
+                    <div>
+                        <img class="pics border" src="http://placehold.it/75x75">
+                        <p class="imgfooter border"> Descripción</p>
+                    </div>
                 </div>
-            </div>
-            <div class="news inline-block fleft">
-                <h2 id="titu3">Piden seis años al presidente de Sortu, Hasier Arraiz, por Segura</h2>
-                <div>
-                    <p>Como sus compañeros que serán juzgados en Madrid, el presidente de Sortu, Hasier Arraiz, afronta una petición fiscal por «integración en ETA» que en su caso se traduce en seis años de cárcel. Por su condición de parlamentario en Gasteiz, le juzgará el TSJPV. Sortu concluye que sigue sin haber «igualdad de condiciones para hacer política».</p></div>
-                <div class="pics"></div>
-                <div class="imgfooter"></div>
-            </div>
-            <div class="news inline-block fleft">
-                <h2>titulo de noticia</h2>
-                <h3>sub-titulo</h3>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo labore perspiciatis animi est molestias magni aut, ex quos modi culpa cupiditate fugit repudiandae dolorem officia? Tenetur, praesentium expedita reprehenderit necessitatibus.</p></div>
-                <div class="pics"></div>
-                <div class="imgfooter"></div>
-            </div>
-            <div class="news inline-block fleft">
-                <h2>titulo de noticia</h2>
-                <h3>sub-titulo</h3>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sit natus ea commodi, tenetur eligendi adipisci labore libero blanditiis quasi ratione. Laborum, sed beatae rerum, officiis sunt nulla eos temporibus!</p></div>
-                <div class="pics"></div>
-                <div class="imgfooter"></div>
+                <div class="col-lg-3 news">
+                    <h2 id="titu2">Seguridad desactiva la situación de "emergencia 1" en los ríos vascos</h2>
+                    <h3> El departamento vasco de Seguridad ha desactivado la situación de "emergencia 1" en Euskadi</h3>
+                    <div>
+                        <p>El departamento vasco de Seguridad ha desactivado la situación de "emergencia 1" en Euskadi por "la mejora observada en las previsiones meteorológicas y en las cuencas de los ríos", aunque mantiene la "situación 0" y la "vigilancia intensiva" en los cauces fluviales.</p>
+                        <p>Según informa el departamento de Seguridad en una nota, "en estos momentos se constata una bajada considerable de los niveles de las cuencas los ríos" vascos "derivada de la disminución generalizada de las precipitaciones" en Euskadi.</p>
+                        <p>Esta situación se constata especialmente en Donostia, donde el caudal del río Urumea a su paso por el barrio de Martutene -en el que hasta el momento la crecida había provocado los mayores inconvenienes-, ha descendido a nivel naranja y a esta hora se sitúa en los 4,2 metros, según informa el Ayuntamiento de Donostia.</p>
+                    </div>
+                    <div>
+                        <img class="pics border" src="http://placehold.it/75x75">
+                        <p class="imgfooter border"> Descripción</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 news">
+                    <h2 id="titu3">Piden seis años al presidente de Sortu, Hasier Arraiz, por Segura</h2>
+                    <div>
+                        <p>Como sus compañeros que serán juzgados en Madrid, el presidente de Sortu, Hasier Arraiz, afronta una petición fiscal por «integración en ETA» que en su caso se traduce en seis años de cárcel. Por su condición de parlamentario en Gasteiz, le juzgará el TSJPV. Sortu concluye que sigue sin haber «igualdad de condiciones para hacer política».</p>
+                    </div>
+                    <div class="pics"></div>
+                    <div class="imgfooter"></div>
+                </div>
+                <div class="col-lg-3 news">
+                    <h2>titulo de noticia</h2>
+                    <h3>sub-titulo</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo labore perspiciatis animi est molestias magni aut, ex quos modi culpa cupiditate fugit repudiandae dolorem officia? Tenetur, praesentium expedita reprehenderit necessitatibus.</p>
+                    </div>
+                    <div class="pics"></div>
+                    <div class="imgfooter"></div>
+                </div>
+                <div class="col-lg-3 news">
+                    <h2>titulo de noticia</h2>
+                    <h3>sub-titulo</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sit natus ea commodi, tenetur eligendi adipisci labore libero blanditiis quasi ratione. Laborum, sed beatae rerum, officiis sunt nulla eos temporibus!</p>
+                    </div>
+                    <div class="pics"></div>
+                    <div class="imgfooter"></div>
+                </div>
             </div>
 
         </div>
-        <div class="footer">
+        <footer>
             <img src="http://mirrors.creativecommons.org/presskit/logos/cc.logo.large.png">
-        </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/npm.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
     </body>
+
+
 
 </html>
