@@ -3,7 +3,13 @@ function carga(){
     var video = document.getElementById("video");
     
 }
-
+function colorChange(){
+    var col = document.getElementById("kolore");
+    var koloreVal=col.value;
+    console.log(koloreVal);
+    document.body.setAttribute('style','background:'+koloreVal);
+    
+}
 function play(){
     video.play();
 }
