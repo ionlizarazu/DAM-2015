@@ -1,41 +1,44 @@
 
 var points=0;
-var timer=4000;
 var times=5;
 var squares=3;
 
 
 $(document).on("pageshow",function(){
     if(location.hash=="#&ui-state=dialog"){
+        
         $("#startSwipe").on("click",startSwipe);
                     
     }
 
     function startSwipe(){
         var lastActive=0;
+        $("label.swipe").css("background-color","#fa4248");
+        $("label.swipe").off();
         $("#startSwipe").css("display","none");
         var nowActive=getRandomInt(1, squares+1);
         changeSwipper(nowActive,lastActive);
         lastActive=nowActive;
-        timeout(times,timer,times,lastActive);
+        timeout(times,times,lastActive);
     }
 
     function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
 
-    function timeout(times,timer,timestotal,lastActive){
+    function timeout(times,timestotal,lastActive){
+        var timer=4000;
         if(times>0){
             setTimeout(function() {
                     var nowActive=getRandomInt(1, squares+1);
                     changeSwipper(nowActive,lastActive);
                     times=times-1;
                     lastActive=nowActive;
-                    timeout(times,timer,timestotal,lastActive);
+                    timeout(times,timestotal,lastActive);
             }, timer);
         }else{
             $("label.swipe").css("background-color","#fa4248");
-            $("label.swipe").unbind();   
+            $("label.swipe").off();   
             $("#sps").html("Total swipes per second: "+((points*1000)/(timer*timestotal)));
         }
     
@@ -69,5 +72,4 @@ $(document).on("pageshow",function(){
             points++;
     }
 });
-
 
