@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
         <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
         <link rel="stylesheet" href="css/themes/a.css" />
+        <link rel="stylesheet" href="css/themes/style.css" />
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
         
@@ -16,10 +17,13 @@
             <h1>Swipper Challenge</h1>
         </div><!-- /header -->
         <div role="main" class="ui-content">
-           <div class="swipe"></div>
-           <div id="points"></div>
-            <div id="timer"></div>
+            <label id="swipe1" class="swipe"></label>
+            <label id="swipe2" class="swipe"></label>
+            <label id="swipe3" class="swipe"></label>
+            <button id="startSwipe" data-role="button">Start!</button>
 
+           <div id="points"></div>
+            
         </div><!-- /content -->
         <div data-role="footer">
             <h4 id="sps">Run, run, run!</h4>

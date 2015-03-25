@@ -1,39 +1,73 @@
 
 var points=0;
-var timer=10000;
+var timer=4000;
+var times=5;
+var squares=3;
+
+
 $(document).on("pageshow",function(){
     if(location.hash=="#&ui-state=dialog"){
-        startTime = new Date().getTime();
-        currentTime = new Date().getTime();
-        
-        
-        $("div.swipe").on("swipeleft",swipeLeftHandler);
-        $("div.swipe").on("swiperight",swipeRightHandler);
-        function swipeRightHandler( event ){
-            event.target.textContent="Right swipe done!";
-            $( event.target ).css("margin-left","10em");
-            $( event.target ).css("text-align", "right");
-            points++;
-            $("#points").html( "Swipped: "+points+" times" );
+        $("#startSwipe").on("click",startSwipe);
+                    
+    }
 
+    function startSwipe(){
+        var lastActive=0;
+        $("#startSwipe").css("display","none");
+        var nowActive=getRandomInt(1, squares+1);
+        changeSwipper(nowActive,lastActive);
+        lastActive=nowActive;
+        timeout(times,timer,times,lastActive);
+    }
+
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function timeout(times,timer,timestotal,lastActive){
+        if(times>0){
+            setTimeout(function() {
+                    var nowActive=getRandomInt(1, squares+1);
+                    changeSwipper(nowActive,lastActive);
+                    times=times-1;
+                    lastActive=nowActive;
+                    timeout(times,timer,timestotal,lastActive);
+            }, timer);
+        }else{
+            $("label.swipe").css("background-color","#fa4248");
+            $("label.swipe").unbind();   
+            $("#sps").html("Total swipes per second: "+((points*1000)/(timer*timestotal)));
         }
-        
-        
-        function swipeLeftHandler( event ){
-            event.target.textContent="Left swipe done!";
-            $( event.target ).css("margin-left","0");
-            $( event.target ).css("text-align", "left");
-            points++;
-            $("#points").html( "Swipped: "+points+" times" );
+    
+    }
+    function changeSwipper(now,last){
+        if(last!=0){
+            $("label#swipe"+last).css("background-color","#fa4248");
+            $("label#swipe"+last).off();
         }
-        setTimeout(function() {
-            console.log("ya");
-            $("div.swipe").unbind();
-            
-            $("#sps").html("Swips per second: "+points/(timer/1000));
-        }, timer);
+        $("label#swipe"+now).on("swipeleft",swipeLeftHandler);
+        $("label#swipe"+now).on("swiperight",swipeRightHandler);
+        $("label#swipe"+now).css("background-color","#8cc63f");
+        
+        //$("#points").html( "Last not zero: "+(last!=0)+" ||last: "+last+" ||now: "+now+" ||last not now: "+(last!=now) );
             
     }
     
+    function swipeRightHandler( event ){
+            //event.target.textContent="<--";
+            if($(event.target).css("margin-left")=="0px"){
+                $( event.target ).css("margin-left","70%");
+            }
+            points++;
+    }
     
+    function swipeLeftHandler( event ){
+            //event.target.textContent="-->";
+            if($(event.target).css("margin-left")!="0px"){
+                $(event.target).css("margin-left","0px");
+            }
+            points++;
+    }
 });
+
+
