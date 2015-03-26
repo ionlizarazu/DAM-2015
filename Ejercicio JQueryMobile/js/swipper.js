@@ -3,7 +3,10 @@ var points=0;
 var times=5;
 var squares=3;
 
+$(document).on("pagehide",function(){
+$("#sps").html("hidden");
 
+});
 $(document).on("pageshow",function(){
     if(location.hash=="#&ui-state=dialog"){
         
